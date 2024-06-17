@@ -121,7 +121,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Russia Liberates Auschwitz\n2 TYPE Liberation\n2 DATE 27 JAN 1945",
             "1 EVEN Japan Bombs Pearl Harbor\n2 TYPE Attack\n2 DATE 07 DEC 1941",
             "1 EVEN D-Day, Allies Invade Normandy\n2 TYPE Attack\n2 DATE 06 JUN 1944",
-            "1 EVEN Germany Occupies Hungary\n2 TYPE Invasion\n2 DATE 19 MARCH 1944",
+            "1 EVEN Germany Occupies Hungary Without Having To Fire A Shot\n2 TYPE Invasion\n2 DATE 19 MARCH 1944",
             "1 EVEN Hitler Becomes German Chancellor\n2 TYPE Background\n2 DATE 30 JAN 1933",
             "1 EVEN Great Britain and France Declare War Against Germany\n2 TYPE Declaration Of War\n2 DATE 03 SEP 1939",
             "1 EVEN Beginning of WWII. Germany Invades Poland\n2 TYPE Invasion\n2 DATE 01 SEP 1939",
@@ -215,6 +215,13 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Armistice of Cassibile is entered into between the Allies and The Kingdom of Italy.\n2 TYPE Background\n2 DATE 3 SEPT 1943",
             "1 EVEN American and French Troops Liberate Paris.\n2 TYPE Background\n2 DATE 25 AUG 1944",
             "1 EVEN Deportations of Jews from Munkacs (about 40 km from Bilky) to Auschwitz begin.\n2 TYPE Background\n2 DATE 11 MAY 1944",
+            "1 EVEN Hungary's leader Miklos Horthy visits Hitler in Austria.\n2 TYPE Background\n2 DATE 18 MARCH 1944",
+            "1 EVEN Nazis begin to take over Jewish homes in Subcarpathia Rus' which was then part of Hungary.\n2 TYPE Background\n2 DATE 20 MARCH 1944",
+            "1 EVEN Jews in Subcarpathia Rus' are ordered to wear yellow armbands.\n2 TYPE Background\n2 DATE 18 MARCH 1944",
+            "1 EVEN Property of Jews in Subcarpathia Rus' are to be seized and Jews 'tisztitani'(cleansed) from the districts.\n2 TYPE Background\n2 DATE 13 APRIL 1944",
+            "1 EVEN Babyn Yar massacre of Jews in Kyiv, Ukraine begins. Nazis murder more than 100,000 Jews.\n2 TYPE Background\n2 DATE 29 SEPT 1941",
+                              
+                              
 
             
             
