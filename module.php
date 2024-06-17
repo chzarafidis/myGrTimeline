@@ -187,7 +187,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Hyperinflation occurs in Germany as a result of debt/reparations owed from World War I.\n2 TYPE Background\n2 DATE FROM 1921 TO 1923",
             "1 EVEN United States Detonates An Atomic Bomb Over Hiroshima, Japan.\n2 TYPE Background\n2 DATE 6 AUG 1945",
             "1 EVEN Japan anounces its surrender ending World War II.\n2 TYPE Background\n2 DATE FROM 15 AUG 1945",
-            "1 EVEN Aoviet Union declares War on Japan.\n2 TYPE Background\n2 DATE 8 AUG 1945",
+            "1 EVEN Soviet Union declares War on Japan.\n2 TYPE Background\n2 DATE 8 AUG 1945",
             "1 EVEN United States Detonates An Atomic Bomb Over Nagasaki, Japan.\n2 TYPE Background\n2 DATE 9 AUG 1945",
             "1 EVEN The Korean War begins when North Korea invades South Korea.\n2 TYPE Background\n2 DATE 25 JUNE 1950",
             "1 EVEN An armistice ends the fighting in the Korean War.\n2 TYPE Background\n2 DATE 27 JULY 1953",
