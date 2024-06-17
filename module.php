@@ -217,7 +217,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
             "1 EVEN Deportations of Jews from Munkacs (about 40 km from Bilky) to Auschwitz begins.\n2 TYPE Background\n2 DATE 11 MAY 1944",
             "1 EVEN Hungary's leader Miklos Horthy visits Hitler in Austria.\n2 TYPE Background\n2 DATE 18 MARCH 1944",
             "1 EVEN Nazis begin to take over Jewish homes in Subcarpathia Rus' which was then part of Hungary.\n2 TYPE Background\n2 DATE 20 MARCH 1944",
-            "1 EVEN Jews in Subcarpathia Rus' are ordered to wear yellow armbands.\n2 TYPE Background\n2 DATE 18 MARCH 1944",
+            "1 EVEN Jews in Subcarpathia Rus' are ordered to wear yellow patches on clothing.\n2 TYPE Background\n2 DATE 04 APRIL 1944",
             "1 EVEN Property of Jews in Subcarpathia Rus' are to be seized and Jews 'tisztitani'(cleansed) from the districts.\n2 TYPE Background\n2 DATE 13 APRIL 1944",
             "1 EVEN Babyn Yar massacre of Jews in Kyiv, Ukraine begins. Nazis murder more than 100,000 Jews.\n2 TYPE Background\n2 DATE 29 SEPT 1941",
                               
