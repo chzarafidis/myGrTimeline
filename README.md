@@ -1,8 +1,8 @@
-# Holocaust-Timeline
+# MyGrTimeline
 This is an Historic Add-In for the genealogy software Webtrees. 
 It is a work in progress and gets updated occasionally. 
-The focus of the timeline is on Jews in Germany, Poland, Hungary and Ukraine. The purpose is to give context to Jewish Family History during the period from World War I Through World War II. Although, as I've worked on it more, it's been expanded to include other events. You, of course, can delete whatever events you don't want in your family timeline. The timeline keeps expanding as I've come to appreciate the impact that external events had my family and my life.
-This is version number 1.0. The timeline will be updated without changing the version number because changes are made too frequently.
+The focus of the timeline is focust on Western Macedonia in Greece, Pontos and Kars.
+
+This is version number 0.1. The timeline will be updated without changing the version number because changes are made too frequently.
 To use, upload the entire folder to webtrees/modules-v4.
-The timeline also needs to be enabled on YOUR Webtrees website by going to Control Panel --> Modules --> Historic Events and checking "Holocaust Timeline."
-To see an example, visit https://emlekezik.com/tree/tree1/individual/I0006/Erika-Weiser. Make sure "historic events" is checked.
+The timeline also needs to be enabled on YOUR Webtrees website by going to Control Panel --> Modules --> Historic Events and checking "MyGrTimeline."
