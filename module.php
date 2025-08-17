@@ -29,7 +29,7 @@ use Fisharebest\Webtrees\Module\ModuleHistoricEventsInterface;
 use Illuminate\Support\Collection;
 
 /**
- * Historic Events: Holocaust Timeline
+ * Historic Events: myGrTimeline
  */
 
 return new class extends AbstractModule implements ModuleCustomInterface, ModuleHistoricEventsInterface {
