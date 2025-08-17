@@ -2,7 +2,7 @@
 
 /**
  * webtrees: online genealogy
- * Copyright (C) 2019 webtrees development team
+ * Copyright (C) 2022 webtrees development team
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
@@ -17,7 +17,7 @@
 
 declare(strict_types=1);
 
-namespace Murwell\WebtreesModules\History\holocaust_timeline;
+namespace Murwell\WebtreesModules\History\myGrTimeline;
 
 use Fisharebest\Localization\Translation;
 use Fisharebest\Webtrees\I18N;
@@ -29,18 +29,18 @@ use Fisharebest\Webtrees\Module\ModuleHistoricEventsInterface;
 use Illuminate\Support\Collection;
 
 /** 
- * Historic Events: Holocaust Timeline
+ * Historic Events: myGrTimeline
  */
 
 return new class extends AbstractModule implements ModuleCustomInterface, ModuleHistoricEventsInterface {
     use ModuleCustomTrait;
     use ModuleHistoricEventsTrait;
 
-    public const CUSTOM_TITLE = 'Holocaust Timeline';
+    public const CUSTOM_TITLE = 'myGrTimeline';
 
-    public const CUSTOM_AUTHOR = 'Murwell';
+    public const CUSTOM_AUTHOR = 'ChZarafidis';
     
-    public const CUSTOM_WEBSITE = 'https://github.com/murwell/Holocaust-Timeline/';
+    public const CUSTOM_WEBSITE = 'https://github.com/chzarafidis/myGrTimeline/';
     
     public const CUSTOM_VERSION = '1.0.0';
 
@@ -108,7 +108,7 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
     }
 
     /**
-     * All events provided by this module.
+     * All events provided by this module (AI Generated).
      *
      * @return Collection<string>
      */
@@ -117,138 +117,50 @@ return new class extends AbstractModule implements ModuleCustomInterface, Module
     {
     
         return new Collection([
-            "1 EVEN Germany Occupies Czechoslovakia\n2 TYPE Invasion\n2 DATE 15 MARCH 1939",
-            "1 EVEN Russia Liberates Auschwitz\n2 TYPE Liberation\n2 DATE 27 JAN 1945",
-            "1 EVEN Japan Bombs Pearl Harbor\n2 TYPE Attack\n2 DATE 07 DEC 1941",
-            "1 EVEN D-Day, Allies Invade Normandy\n2 TYPE Attack\n2 DATE 06 JUN 1944",
-            "1 EVEN Germany Occupies Hungary Without Having To Fire A Shot\n2 TYPE Invasion\n2 DATE 19 MARCH 1944",
-            "1 EVEN Hitler Becomes German Chancellor\n2 TYPE Background\n2 DATE 30 JAN 1933",
-            "1 EVEN Great Britain and France Declare War Against Germany\n2 TYPE Declaration Of War\n2 DATE 03 SEP 1939",
-            "1 EVEN Beginning of WWII. Germany Invades Poland\n2 TYPE Invasion\n2 DATE 01 SEP 1939",
-            "1 EVEN Auschwitz Established\n2 TYPE Concentration Camp\n2 DATE 20 MAY 1940",
-            "1 EVEN Krakow Ghetto Formally Established\n2 TYPE Ghetto\n2 DATE 03 MARCH 1941",
-            "1 EVEN Germany begins the deportation of Dutch Jews from camps in the Netherlands\n2 TYPE Deportation\n2 DATE 15 JULY 1942",
-            "1 EVEN Krakow Ghetto Liquidated. Those deemed able to work were transported to the Płaszów concentration camp. Some 2,000 Jews unable to move or attempting to run were killed in the streets and in their homes. Operation Reinhard\n2 TYPE Ghetto\n2 DATE 13 MARCH 1943",
-            "1 EVEN 435,000 Hungarian Jews Are Deported To Auschwitz\n2 TYPE Deportation\n2 DATE FROM 15 MAY 1944 TO 09 JULY 1944",
-            "1 EVEN German Parliament Passes Nuremberg Race Laws. Only racially pure Germans would be allowed to hold German citizenship. It banned future intermarriages and sexual relations between Jews and people “of German or related blood.” \n2 TYPE Background\n2 DATE 15 SEP 1935",
-            "1 EVEN Kristallnacht\n2 TYPE Pogrom\n2 DATE FROM 09 NOV 1938 TO 10 NOV 1938\n2 NOTE Kristallnacht (Crystal Night) comes from the broken windows of Jewish-owned stores, buildings and synagogues that were smashed. 7,500 Jewish owned businesses are looted. 30,000 Jewish males were rounded up and taken to concentration camps.",
-            "1 EVEN Germany begins deportation of Austrian and Czech Jews to Poland\n2 TYPE Deportation\n2 DATE 12 OCT 1939",
-            "1 EVEN Germany Occupies Denmark and southern Norway\n2 TYPE Invasion\n2 DATE 09 APRIL 1940",
-            "1 EVEN France Surrenders To Germany\n2 TYPE Surrender\n2 DATE 22 JUNE 1940",
-            "1 EVEN Warsaw Ghetto Sealed\n2 TYPE Ghetto\n2 DATE 16 NOV 1940",
-            "1 EVEN Archduke Franz Ferdinand, Heir To The Austrian Throne, Is Assasinated In Sarajevo, Bosnia\n2 TYPE Assasination\n2 DATE 18 JUNE 1914",
-            "1 EVEN British Passenger Liner Lusitania Is Sunk By A German Sumbarine. Killing about 1200.\n2 TYPE Background\n2 DATE 18 JUNE 1914",
-            "1 EVEN United States Declares War On Germany\n2 TYPE Background\n2 DATE 6 APR 1917",
-            "1 EVEN United States Signs Armistice With Germany\n2 TYPE Background\n2 DATE 11 NOV 1918",
-            "1 EVEN Britain Declares War On Germany.\n2 TYPE Background\n2 DATE 04 AUG 1914",
-            "1 EVEN Treaty Of Trianon ended WWI. Hungary Gives Up Two Thirds Of Its Land. Town Of Bilky Becomes Part of Czechoslovakia.\n2 TYPE Background\n2 DATE 06 JUNE 1920",
-            "1 EVEN Austria-Hungary Declares War On Serbia. Russia, An Ally Of Serbia, Mobilize Troops. Russia's entrance into WWI was a disaster. By the end of the war, about 2.5 million Russians had been killed.\n2 TYPE Background\n2 DATE 28 JULY 1914",
-            "1 EVEN Germany Declares War On Russia.\n2 TYPE Background\n2 DATE 01 AUG 1914",
-            "1 EVEN Germany Declares War On France.\n2 TYPE Background\n2 DATE 03 AUG 1914",
-            "1 EVEN Austria Declares War On Russia.\n2 TYPE Background\n2 DATE 06 AUG 1914",
-            "1 EVEN Japan Declares War On Germany.\n2 TYPE Background\n2 DATE 23 AUG 1914",
-            "1 EVEN Austria Declares War On Japan.\n2 TYPE Background\n2 DATE 25 AUG 1914",
-            "1 EVEN United States Declares War On Austria-Hungary.\n2 TYPE Background\n2 DATE 7 DEC 1917",
-            "1 EVEN Germany Invades Belgium, the Netherlands, and France.\n2 TYPE Invasion\n2 DATE 10 MAY 1940",
-            "1 EVEN Dunkirk Evacuation.\n2 TYPE Background\n2 DATE FROM 26 MAY 1940 TO 4 JUNE 1940",
-            "1 EVEN In Krakow, Judenräte (Jewish Councils) were created which were to be run by Jewish citizens for the purpose of carrying out orders for the Nazis. These orders included registration of all Jewish people living in the area, the collection of taxes, and forced labour groups.\n2 TYPE Krakow Ghetto\n2 DATE 28 NOV 1939",
-            "1 EVEN The Great Powers were divided into two opposing alliances, the Triple Entente, consisting of France, Russia, and Britain, and the Triple Alliance, made up of Germany, Austria-Hungary, and Italy. \n2 TYPE Background\n2 DATE 1 JAN 1914",
-            "1 EVEN Russian Czar Nicholas is forced to abdicate the throne.\n2 TYPE Background\n2 DATE 15 MARCH 1917",
-            "1 EVEN In Russia, leftist revolutionaries led by Bolshevik Party leader Vladimir Lenin launch a nearly bloodless coup d’état against the provisional government. Beginning of the Russian Civil War.\n2 TYPE Background\n2 DATE 7 NOV 1917",
-            "1 EVEN Russian Civil War ends. 7,000,000–12,000,000 total deaths. The overwhelming majority of deaths were civilians. Russia becomes Soviet Union.\n2 TYPE Background\n2 DATE 16 JUNE 1923",
-            "1 EVEN In Soviet Union, Stalin becomes General Secretary of Communist Party.\n2 TYPE Background\n2 DATE 3 APRIL 1922",
-            "1 EVEN Germany arrests 17,000 Polish Jewish Residents and deports thousands to Poland. https://w.wiki/5R8z \n2 TYPE Background\n2 DATE FROM 27 OCTOBER 1938 TO 29 OCTOBER 1938",        
-            "1 EVEN Carpathian Ruthenia Region, of which Bilky is a part of, declares its indepedence from Czechoslovakia.\n2 TYPE Background\n2 DATE 15 MARCH 1939",
-            "1 EVEN Carpathian Ruthenia Region, of which Bilky is a part of, is occupied and annexed by Hungary.\n2 TYPE Background\n2 DATE FROM 15 MARCH 1939 TO  18 MARCH 1939",
-            "1 EVEN Nazis Photograph Hungarian Jews Arriving At Auschwitz. Many Jews Were From The Sub-Carpathia Region. Theses photos became know as The Auschwitz Album/Lilly Jacob Album. Lilly Jacob, the woman who found the photos, was from Bilky, Ukraine.\n2 TYPE Background\n2 DATE 26 MAY 1944",
-            "1 EVEN Hungary restricts the number of Jews in each commercial enterprise, in the press, among physicians, engineers and lawyers to twenty percent.\n2 TYPE Hungarian Anti-Jewish Laws\n2 DATE 29 MAY 1938",
-            "1 EVEN Hungary defines Jews racially: individuals with two, three or four Jewish-born grandparents were declared Jewish. It reduced the role of Jews in Hungarian economic life even more, setting the limit to 6%. \n2 TYPE Hungarian Anti-Jewish Laws\n2 DATE 5 MAY 1939",
-            "1 EVEN Hungary prohibits intermarriage and penalizes sexual intercourse between Jews and non-Jews. Became a keystone in the process of excluding and eliminating Jews from Hungarian society. \n2 TYPE Hungarian Anti-Jewish Laws\n2 DATE 8 AUGUST 1941",
-            "1 EVEN Hungary abolishes the status of Judaism as a received religion.\n2 TYPE Hungarian Anti-Jewish Laws\n2 DATE 19 JULY 1942",            
-            "1 EVEN Hungary prohibits Jews from acquiring agricultural property, and calls for the transfer of Jewish-owned property to non-Jews.\n2 TYPE Hungarian Anti-Jewish Laws\n2 DATE 6 SEPT 1942",
-            "1 EVEN Munich Agreement reached by Germany, Great Britain, France, and Italy that permitted German annexation of the Sudetenland, in western Czechoslovakia.\n2 TYPE Background\n2 DATE 30 SEPTEMBER 1938",
-            "1 EVEN Germany annexes Austria.\n2 TYPE Background\n2 DATE 12 MARCH 1938",
-            "1 EVEN First Vienna Award separated from Czechoslovakia territories in southern Slovakia and southern Carpathian Rus and gave them to Hungary.\n2 TYPE Background\n2 DATE 2 NOVEMBER 1938",
-            "1 EVEN UN General Assembly passes Resolution 181, adopting a plan to partition the Palestine British Mandate into two states, one Jewish, one Arab.\n2 TYPE Background\n2 DATE 29 NOVEMBER 1947",
-            "1 EVEN Israel declares its independence.\n2 TYPE Background\n2 DATE 14 MAY 1948",            
-            "1 EVEN Germany unconditionally surrenders.\n2 TYPE Background\n2 DATE 07 MAY 1945",            
-            "1 EVEN In the United States, the 18th Amendment Prohibition of alcohol becomes effective.\n2 TYPE Background\n2 DATE 17 JAN 1920",            
-            "1 EVEN In the United States, the 18th Amendment is repealed and alcohol becomes legal again.\n2 TYPE Background\n2 DATE 5 DEC 1933",            
-            "1 EVEN In the United States, the stock market crashes and loses 23% in two days.\n2 TYPE Background\n2 DATE FROM 23 OCT 1929 TO 24 OCT 1929",
-            "1 EVEN In the United States, the stock market loses 90% of its value in less than three years.\n2 TYPE Background\n2 DATE FROM APR 1930 TO JULY 1932",
-            "1 EVEN In the United States, the 18th Amendment is certified and women are given the right to vote.\n2 TYPE Background\n2 DATE 26 AUG 1920",
-            "1 EVEN In Czechoslovakia, women are given the right to vote when the Constitution is enacted.\n2 TYPE Background\n2 DATE 29 FEB 1920",
-            "1 EVEN In the United States, the Emergency Quota Act restricts the number of immigrants.\n2 TYPE Background\n2 DATE 21 MAY 1921",
-            "1 EVEN Henry Ford publishes an article called THE INTERNATIONAL JEW: THE WORLD'S PROBLEM in the Dearborn Independent. Ford continues to publish anti-semitic articles for seven years. Copies of the newspapers are placed in Ford Auto Delearships. newspaper is sent\n2 TYPE Background\n2 DATE 22 MAY 1920",
-            "1 EVEN Mein Kampf, Hitler's autobigraphical manifesto, is published. Hitler compliments Henry Ford by name.\n2 TYPE Background\n2 DATE 18 JULY 1925",
-            "1 EVEN The United States stock market reaches its lowest point during the Great Depression. It was down 90% from its high.\n2 TYPE Background\n2 DATE 8 JULY 1932",
-            "1 EVEN Heinrich Bruning becomes Chancellor of Germany. In response to the worldwide depression, he institutes a policy of austerity by tightening credit and reducing wages.\n2 TYPE Background\n2 DATE 30 MARCH 1930",
-            "1 EVEN Heinrich Bruning, Chancellor Of German, announces his Cabinet's resignation. Hitler becomes chancellor eight months later.\n2 TYPE Background\n2 DATE 30 MAY 1932",
-            "1 EVEN Hyperinflation occurs in Germany as a result of debt/reparations owed from World War I.\n2 TYPE Background\n2 DATE FROM 1921 TO 1923",
-            "1 EVEN United States Detonates An Atomic Bomb Over Hiroshima, Japan.\n2 TYPE Background\n2 DATE 6 AUG 1945",
-            "1 EVEN Japan anounces its surrender ending World War II.\n2 TYPE Background\n2 DATE FROM 15 AUG 1945",
-            "1 EVEN Soviet Union declares War on Japan.\n2 TYPE Background\n2 DATE 8 AUG 1945",
-            "1 EVEN United States Detonates An Atomic Bomb Over Nagasaki, Japan.\n2 TYPE Background\n2 DATE 9 AUG 1945",
-            "1 EVEN The Korean War begins when North Korea invades South Korea.\n2 TYPE Background\n2 DATE 25 JUNE 1950",
-            "1 EVEN An armistice ends the fighting in the Korean War.\n2 TYPE Background\n2 DATE 27 JULY 1953",
-            "1 EVEN Japan annexes Korea.\n2 TYPE Background\n2 DATE FROM 1910",
-            "1 EVEN On the first night of Passover, Erev Pesach - Hebrew Calendar Nisan 14 (1st day of Pesach is Nisan 15), the Nazis enter the Warsaw Ghetto to deport the remaining Jews. In response, the uprising begins. Nazis proceed to burn the ghetto, block by block, murdering 13,000 Jews. It ended with the Nazis destroying the Great Synagogue Of Warsaw. The remaining 50,000 Jews were deported to concentration camps.\n2 TYPE Background\n2 FROM 19 APRIL 1943 TO 16 MAY 1943", 
-            "1 EVEN 1936 Summer Olympics begins in Berlin, Germany. German Jewish athletes were barred.\n2 TYPE Background\n2 DATE 1 AUG 1936",
-            "1 EVEN Reichstag Fire gives Hitler the opportunity to suspend civil liberties and the establishment of the Nazi Party as the only political party in Germany.\n2 TYPE Background\n2 DATE 27 FeB 1933",
-            "1 EVEN Hitler holds a secret meeting in which he outlines Germany's plan to expand its territories by force. The meeting is summarized in the Hossbach Memorandum.\n2 TYPE Background\n2 DATE 5 NOV 1937",
-            "1 EVEN Winston Churchill becomes Prime Minister of Britain. \n2 TYPE Background\n2 DATE 10 MAY 1940",
-            "1 EVEN At the Wannsee Conference, Nazis finalized their Final Solution plans to murder all the Jews after their deportation. Adolf Eichmann, who was eventually tried and executed in Israel for murdering Jews via the systematic deportation of millions of Jews to the extermination camps, was at the meeting.\n2 TYPE Background\n2 DATE 20 JAN 1942",
-            "1 EVEN Belgium Resistance attacks a train bound for Auschwitz and free 233 prisoners. It is the only mass escape from a Holocaust train. \n2 TYPE Background\n2 DATE 19 APR 1943",
-            "1 EVEN In Poland, all Jews above the age of 11 must wear white armbands with the Jewish Star.\n2 TYPE Background\n2 DATE 23 NOV 1939",
-            "1 EVEN Jewish Germans and Jews with citizenship of annexed states (Austrians, Czechs, Danzigers) from the age of six years are ordered to wear a yellow badge in the shape of a Jewish Star with Jude in the center.\n2 TYPE Background\n2 DATE 1 SEPT 1941", 
-            "1 EVEN Jewish Dutch people ordered to wear the Jewish yellow badge.\n2 TYPE Background\n2 DATE 29 APRIL 1942",
-            "1 EVEN Jewish Belgians people ordered to wear the Jewish yellow badge.\n2 TYPE Background\n2 DATE 3 JUNE 1942",
-            "1 EVEN Jews in Occuppied France ordered to wear the Jewish yellow badge.\n2 TYPE Background\n2 DATE 7 JUNE 1942",
-            "1 EVEN First convoy of Jews from France are sent to Auschwitz.\n2 TYPE Background\n2 DATE 27 MARCH 1942",    
-            "1 EVEN French communist newspaper publishes a cover story about the extermination of 11,000 French Jews at Auschwitz.\n2 TYPE Background\n2 DATE 10 OCT 1942",    
-            "1 EVEN Two inmates, Slovak Jews Alfred Wetzler and Rudolf Vrba, escape from Auschwitz. They contact the Jewish council in Slovakia and give details about the murder of Jews at Auschwitz. A report is soon released to warn Hungary’s Jews of the Nazi plans to wipe out their community. The report initally does nothing to stop the mass deportation of Hungarian Jews to Auschwitz. Finally, in July 1944, after the report is published in the Swiss Press,  Hungary is forced to stopped the deportation. The persecution of Hungarian Jews is continued in October 1944.\n2 TYPE Background\n2 DATE 10 APRIL 1944",    
-            "1 EVEN Small story on page 10 of the New York Times reported on the slaughter of Jews at Auschwitz.\n2 TYPE Reports On The Holocaust\n2 DATE 25 NOV 1942",    
-            "1 EVEN A non-aggression pact is signed between Soviet Union and Germany. It enabled the two countries to partition Poland. It is known as the Molotov-Ribbentrop pact.\n2 TYPE Background\n2 DATE 23 AUG 1939",  
-            "1 EVEN Soviet Union invades Poland.\n2 TYPE Background\n2 DATE 17 SEPT 1939",
-            "1 EVEN Soviet Union and Germany divide Poland by German–Soviet Boundary and Friendship Treaty.\n2 TYPE Background\n2 DATE 28 SEPT 1939",
-            "1 EVEN Allied Forces invasion of Italy begins in Sicily.\n2 TYPE Background\n2 DATE 10 JULY 1943",
-            "1 EVEN Armistice of Cassibile is entered into between the Allies and The Kingdom of Italy.\n2 TYPE Background\n2 DATE 3 SEPT 1943",
-            "1 EVEN American and French Troops Liberate Paris.\n2 TYPE Background\n2 DATE 25 AUG 1944",
-            "1 EVEN Deportations of Jews from Munkacs (about 40 km from Bilky) to Auschwitz begins.\n2 TYPE Background\n2 DATE 11 MAY 1944",
-            "1 EVEN Hungary's leader Miklos Horthy visits Hitler in Austria.\n2 TYPE Background\n2 DATE 18 MARCH 1944",
-            "1 EVEN Nazis begin to take over Jewish homes in Subcarpathia Rus' which was then part of Hungary.\n2 TYPE Background\n2 DATE 20 MARCH 1944",
-            "1 EVEN Jews in Subcarpathia Rus' are ordered to wear yellow patches on clothing.\n2 TYPE Background\n2 DATE 04 APRIL 1944",
-            "1 EVEN Property of Jews in Subcarpathia Rus' are to be seized and Jews 'tisztitani'(cleansed) from the districts.\n2 TYPE Background\n2 DATE 13 APRIL 1944",
-            "1 EVEN Babyn Yar massacre of Jews in Kyiv, Ukraine begins. Nazis murder more than 100,000 Jews.\n2 TYPE Background\n2 DATE 29 SEPT 1941",
-                              
-                              
-
-            
-            
-
-            
-
-            
-
-
-            
-
-
-            
-
-            
-          
-
-
-
-
-
-
-
-            
-
-
-
+    "1 EVEN Ίδρυση Φροντιστηρίου Τραπεζούντας\n2 TYPE Education\n2 DATE 1682\n2 NOTE Ο Σεβαστός Κυμινήτης ιδρύει το σπουδαιότερο εκπαιδευτικό ίδρυμα του Πόντου. [wikipedia gr](https://el.wikipedia.org/wiki/Φροντιστήριο_Τραπεζούντας )",
+    "1 EVEN Ίδρυση Φροντιστηρίου Αργυρούπολης\n2 TYPE Education\n2 DATE 1723\n2 NOTE Ιδρύεται το δεύτερο μεγάλο εκπαιδευτικό κέντρο του Πόντου, με τεράστια συμβολή στην παιδεία της Χαλδίας. [wikipedia gr](https://el.wikipedia.org/wiki/Αργυρούπολη_Πόντου#Εκπαίδευση )",
+    "1 EVEN Ορλωφικά\n2 TYPE Uprising\n2 DATE 1770\n2 NOTE Υποκινούμενη από τη Ρωσία επανάσταση στην Πελοπόννησο και την Κρήτη. [wikipedia gr](https://el.wikipedia.org/wiki/Ορλωφικά )",
+    "1 EVEN Ίδρυση Σχολής Τσοτυλίου\n2 TYPE Education\n2 DATE 1771\n2 NOTE Η σχολή εξελίχθηκε σε φάρο του Ελληνισμού για τη Δυτική Μακεδονία. [wikipedia gr](https://el.wikipedia.org/wiki/Τσοτύλι_Κοζάνης#Γυμνάσιο )",
+    "1 EVEN Γαλλική Επανάσταση\n2 TYPE Background\n2 DATE 1789\n2 NOTE Οι ιδέες της για ""Ελευθερία, Ισότητα, Αδελφοσύνη"" διαδίδονται στον ελληνικό χώρο. [wikipedia gr](https://el.wikipedia.org/wiki/Γαλλική_Επανάσταση )",
+    "1 EVEN Μαρτύριο Ρήγα Φεραίου\n2 TYPE Execution\n2 DATE 1797\n2 NOTE Ο Ρήγας στραγγαλίζεται στο Βελιγράδι και ο ""Θούριός"" του γίνεται ο ύμνος της επερχόμενης εξέγερσης. [wikipedia gr](https://el.wikipedia.org/wiki/Ρήγας_Φεραίος )",
+    "1 EVEN Ίδρυση Φιλικής Εταιρείας\n2 TYPE Background\n2 DATE 1814\n2 NOTE Στην Οδησσό, ιδρύεται η μυστική οργάνωση που προετοίμασε την Ελληνική Επανάσταση. [wikipedia gr](https://el.wikipedia.org/wiki/Φιλική_Εταιρεία )",
+    "1 EVEN Ελληνική Επανάσταση\n2 TYPE War of Independence\n2 DATE FROM 1821 TO 1827\n2 NOTE Ο αγώνας των Ελλήνων για την ανεξαρτησία από την Οθωμανική Αυτοκρατορία. [wikipedia gr](https://el.wikipedia.org/wiki/Ελληνική_Επανάσταση_του_1821 )",
+    "1 EVEN Ίδρυση Ελληνικού Κράτους\n2 TYPE Nation Building\n2 DATE FROM 1830 TO 1832\n2 NOTE Με τις Συνθήκες Λονδίνου & Κωνσταντινούπολης, ορίζονται τα πρώτα σύνορα. [wikipedia gr](https://el.wikipedia.org/wiki/Πρωτόκολλο_του_Λονδίνου_(1830) )",
+    "1 EVEN Προσάρτηση Επτανήσων\n2 TYPE Annexation\n2 DATE 29 MARCH 1864\n2 NOTE Η Βρετανία παραχωρεί τα Ιόνια Νησιά στην Ελλάδα. [wikipedia gr](https://el.wikipedia.org/wiki/Ένωση_της_Επτανήσου_με_την_Ελλάδα )",
+    "1 EVEN Μεγάλη Ανατολική Κρίση\n2 TYPE Diplomatic Crisis\n2 DATE FROM 1875 TO 1878\n2 NOTE Η κρίση οδηγεί στον Ρωσοτουρκικό πόλεμο και το Συνέδριο του Βερολίνου. [wikipedia gr](https://el.wikipedia.org/wiki/Μεγάλη_Ανατολική_Κρίση )",
+    "1 EVEN Προσάρτηση Θεσσαλίας και Άρτας\n2 TYPE Annexation\n2 DATE 1881\n2 NOTE Η Οθωμανική Αυτοκρατορία παραχωρεί τις περιοχές αυτές στην Ελλάδα. [wikipedia gr](https://el.wikipedia.org/wiki/Σύμβαση_της_Κωνσταντινούπολης_(1881) )",
+    "1 EVEN Διάνοιξη Διώρυγας Κορίνθου\n2 TYPE Infrastructure\n2 DATE 1893\n2 NOTE Ολοκληρώνεται το εμβληματικό έργο του Χαρίλαου Τρικούπη. [wikipedia gr](https://el.wikipedia.org/wiki/Διώρυγα_της_Κορίνθου )",
+    "1 EVEN Ολυμπιακοί Αγώνες Αθήνας\n2 TYPE Cultural\n2 DATE 1896\n2 NOTE Διεξαγωγή των πρώτων σύγχρονων Ολυμπιακών Αγώνων. [wikipedia gr](https://el.wikipedia.org/wiki/Θερινοί_Ολυμπιακοί_Αγώνες_1896 )",
+    "1 EVEN Ελληνοτουρκικός Πόλεμος (Ατυχής Πόλεμος)\n2 TYPE War\n2 DATE 1897\n2 NOTE Ξεσπά με αφορμή την Κρητική Επανάσταση και καταλήγει σε ήττα της Ελλάδας. [wikipedia gr](https://el.wikipedia.org/wiki/Ελληνοτουρκικός_Πόλεμος_(1897) )",
+    "1 EVEN Αυτονομία Κρήτης & Διεθνής Οικονομικός Έλεγχος\n2 TYPE Political\n2 DATE 1898\n2 NOTE Η Κρήτη γίνεται αυτόνομη ηγεμονία και επιβάλλεται στην Ελλάδα Διεθνής Οικονομικός Έλεγχος. [wikipedia gr](https://el.wikipedia.org/wiki/Κρητική_Πολιτεία )",
+    "1 EVEN Μακεδονικός Αγώνας\n2 TYPE Guerrilla War\n2 DATE FROM 1904 TO 1908\n2 NOTE Ένοπλα ελληνικά σώματα συγκρούονται με Βούλγαρους κομιτατζήδες στη Μακεδονία. [wikipedia gr](https://el.wikipedia.org/wiki/Μακεδονικός_Αγώνας )",
+    "1 EVEN Ίδρυση Αλβανικού Κράτους\n2 TYPE Nation Building\n2 DATE 28 NOV 1912\n2 NOTE Ο Ισμαήλ Κεμάλ κηρύσσει την ανεξαρτησία της Αλβανίας στην Αυλώνα. [wikipedia gr](https://el.wikipedia.org/wiki/Διακήρυξη_της_Αλβανικής_Ανεξαρτησίας )",
+    "1 EVEN Ένωση Κρήτης με την Ελλάδα\n2 TYPE Annexation\n2 DATE 01 DEC 1913\n2 NOTE Μετά τους Βαλκανικούς Πολέμους, η Κρήτη ενσωματώνεται επίσημα στο Ελληνικό Κράτος. [wikipedia gr](https://el.wikipedia.org/wiki/Κρητική_Πολιτεία#Η_Ένωση )",
+    "1 EVEN Πρωτόκολλο Φλωρεντίας, Η Βόρεια Ήπειρος στην Αλβανία\n2 TYPE Treaty\n2 DATE 17 DEC 1913\n2 NOTE Οι Μεγάλες Δυνάμεις επιδικάζουν τη Βόρεια Ήπειρο στο νεοσύστατο αλβανικό κράτος. [wikipedia gr](https://el.wikipedia.org/wiki/Πρωτόκολλο_της_Φλωρεντίας_(1913) )",
+    "1 EVEN Α' Παγκόσμιος Πόλεμος & Εθνικός Διχασμός\n2 TYPE War\n2 DATE FROM 1914 TO 1918\n2 NOTE Η σύγκρουση Βενιζέλου-Κωνσταντίνου για την είσοδο στον πόλεμο διχάζει τη χώρα. [wikipedia gr](https://el.wikipedia.org/wiki/Εθνικός_Διχασμός )",
+    "1 EVEN Γενοκτονία Ελλήνων του Πόντου\n2 TYPE Genocide\n2 DATE FROM 1914 TO 1923\n2 NOTE Η συστηματική εξόντωση του ελληνικού πληθυσμού του Πόντου από την Οθωμανική Αυτοκρατορία. [wikipedia gr](https://el.wikipedia.org/wiki/Γενοκτονία_των_Ελλήνων_του_Πόντου )",
+    "1 EVEN Οκτωβριανή Επανάσταση\n2 TYPE Revolution\n2 DATE OCT 1917\n2 NOTE Η κατάληψη της εξουσίας από τους Μπολσεβίκους στη Ρωσία αλλάζει τις παγκόσμιες ισορροπίες. [wikipedia gr](https://el.wikipedia.org/wiki/Οκτωβριανή_Επανάσταση )",
+    "1 EVEN Συνθήκη του Μπρεστ-Λιτόφσκ\n2 TYPE Treaty\n2 DATE 03 MARCH 1918\n2 NOTE Η Σοβιετική Ρωσία αποχωρεί από τον Α' Π.Π., παραχωρώντας το Καρς στους Οθωμανούς. [wikipedia gr](https://el.wikipedia.org/wiki/Συνθήκη_του_Μπρεστ_-Λιτόφσκ )",
+    "1 EVEN Μικρασιατική Εκστρατεία και Καταστροφή\n2 TYPE War\n2 DATE FROM 1919 TO 1922\n2 NOTE Η εκστρατεία του ελληνικού στρατού στη Μικρά Ασία και η τελική ήττα και καταστροφή. [wikipedia gr](https://el.wikipedia.org/wiki/Μικρασιατική_εκστρατεία )",
+    "1 EVEN Δημιουργία της ΕΣΣΔ\n2 TYPE Nation Building\n2 DATE 30 DEC 1922\n2 NOTE Ίδρυση της Ένωσης Σοβιετικών Σοσιαλιστικών Δημοκρατιών. [wikipedia gr](https://el.wikipedia.org/wiki/Σοβιετική_Ένωση )",
+    "1 EVEN Συνθήκη της Λωζάνης\n2 TYPE Treaty\n2 DATE 1923\n2 NOTE Καθορίζονται τα σύνορα Ελλάδας-Τουρκίας και συμφωνείται η ανταλλαγή πληθυσμών. [wikipedia gr](https://el.wikipedia.org/wiki/Συνθήκη_της_Λωζάνης )",
+    "1 EVEN Β' Ελληνική Δημοκρατία\n2 TYPE Political\n2 DATE FROM 1924 TO 1935\n2 NOTE Η περίοδος της Αβασίλευτης Δημοκρατίας στην Ελλάδα. [wikipedia gr](https://el.wikipedia.org/wiki/Δεύτερη_Ελληνική_Δημοκρατία )",
+    "1 EVEN Παγκόσμιο Οικονομικό Κραχ\n2 TYPE Economic Crisis\n2 DATE 1929\n2 NOTE Το Κραχ της Wall Street οδηγεί σε παγκόσμια ύφεση, επηρεάζοντας και την Ελλάδα. [wikipedia gr](https://el.wikipedia.org/wiki/Κραχ_του_1929 )",
+    "1 EVEN Δικτατορία 4ης Αυγούστου\n2 TYPE Dictatorship\n2 DATE FROM 1936 TO 1941\n2 NOTE Το δικτατορικό καθεστώς του Ιωάννη Μεταξά. [wikipedia gr](https://el.wikipedia.org/wiki/Καθεστώς_της_4ης_Αυγούστου )",
+    "1 EVEN Ρίψη ατομικών βομβών σε Χιροσίμα και Ναγκασάκι\n2 TYPE Attack\n2 DATE AUG 1945\n2 NOTE Οι ΗΠΑ χρησιμοποιούν ατομικά όπλα, επισπεύδοντας το τέλος του Β' Παγκοσμίου Πολέμου. [wikipedia gr](https://el.wikipedia.org/wiki/Ρίψη_ατομικής_βόμβας_στη_Χιροσίμα_και_το_Ναγκασάκι )",
+    "1 EVEN Εμφύλιος Πόλεμος\n2 TYPE Civil War\n2 DATE FROM 1946 TO 1949\n2 NOTE Η ένοπλη σύγκρουση που σημάδεψε τη μεταπολεμική Ελλάδα. [wikipedia gr](https://el.wikipedia.org/wiki/Ελληνικός_εμφύλιος_πόλεμος_(1946-1949) )",
+    "1 EVEN Προσάρτηση Δωδεκανήσων\n2 TYPE Annexation\n2 DATE 1947\n2 NOTE Με τη Συνθήκη των Παρισίων, τα Δωδεκάνησα ενσωματώνονται στην Ελλάδα. [wikipedia gr](https://el.wikipedia.org/wiki/Δωδεκάνησα#Ενσωμάτωση_στον_κορμό_του_Ελληνικού_Κράτους )",
+    "1 EVEN Πόλεμος της Κορέας\n2 TYPE War\n2 DATE FROM 1950 TO 1953\n2 NOTE Η Ελλάδα συμμετέχει με εκστρατευτικό σώμα στο πλευρό των δυνάμεων του ΟΗΕ. [wikipedia gr](https://el.wikipedia.org/wiki/Πόλεμος_της_Κορέας )",
+    "1 EVEN Ένταξη της Ελλάδας στο ΝΑΤΟ\n2 TYPE Alliance\n2 DATE 1952\n2 NOTE Η Ελλάδα γίνεται πλήρες μέλος της Βορειοατλαντικής Συμμαχίας. [wikipedia gr](https://el.wikipedia.org/wiki/ΝΑΤΟ )",
+    "1 EVEN Πόλεμος του Βιετνάμ\n2 TYPE War\n2 DATE FROM 1955 TO 1975\n2 NOTE Ο μακροχρόνιος πόλεμος που έγινε επίκεντρο της αντιπαράθεσης του Ψυχρού Πολέμου. [wikipedia gr](https://el.wikipedia.org/wiki/Πόλεμος_του_Βιετνάμ )",
+    "1 EVEN Στρατιωτική Δικτατορία\n2 TYPE Dictatorship\n2 DATE FROM 1967 TO 1974\n2 NOTE Η ""Χούντα των Συνταγματαρχών"" επιβάλλει δικτατορία για επτά χρόνια. [wikipedia gr](https://el.wikipedia.org/wiki/Χούντα_των_Συνταγματαρχών )",
+    "1 EVEN Εισβολή στην Κύπρο & Μεταπολίτευση\n2 TYPE Invasion\n2 DATE 1974\n2 NOTE Η τουρκική εισβολή στην Κύπρο προκαλεί την πτώση της Χούντας και την αποκατάσταση της Δημοκρατίας. [wikipedia gr](https://el.wikipedia.org/wiki/Τουρκική_εισβολή_στην_Κύπρο )",
+    "1 EVEN Ένταξη της Ελλάδας στην Ε.Ο.Κ.\n2 TYPE Political\n2 DATE 1981\n2 NOTE Η Ελλάδα γίνεται το 10ο μέλος της τότε Ευρωπαϊκής Οικονομικής Κοινότητας. [wikipedia gr](https://el.wikipedia.org/wiki/Ευρωπαϊκή_Ένωση )",
+    "1 EVEN Διάλυση της ΕΣΣΔ\n2 TYPE Political\n2 DATE 26 DEC 1991\n2 NOTE Η Σοβιετική Ένωση διαλύεται επίσημα, τερματίζοντας τον Ψυχρό Πόλεμο. [wikipedia gr](https://el.wikipedia.org/wiki/Διάλυση_της_Σοβιετικής_Ένωσης )",
+    "1 EVEN Ένταξη στην Ευρωζώνη\n2 TYPE Economic\n2 DATE 2001\n2 NOTE Η Ελλάδα γίνεται η 12η χώρα που υιοθετεί το ευρώ. [wikipedia gr](https://el.wikipedia.org/wiki/Ευρωζώνη )",
+    "1 EVEN Ολυμπιακοί Αγώνες Αθήνα 2004\n2 TYPE Cultural\n2 DATE 2004\n2 NOTE Η Ελλάδα φιλοξενεί τους 28ους Θερινούς Ολυμπιακούς Αγώνες. [wikipedia gr](https://el.wikipedia.org/wiki/Θερινοί_Ολυμπιακοί_Αγώνες_2004 )",
+    "1 EVEN Ελληνική οικονομική κρίση χρέους\n2 TYPE Economic Crisis\n2 DATE FROM 2009 TO 2018\n2 NOTE Η χώρα εισέρχεται σε μια βαθιά δεκαετή οικονομική κρίση. [wikipedia gr](https://el.wikipedia.org/wiki/Ελληνική_κρίση_χρέους )",
+    "1 EVEN Πανδημία COVID-19\n2 TYPE Health Crisis\n2 DATE FROM 2020 TO 2022\n2 NOTE Η Ελλάδα, όπως και ο υπόλοιπος πλανήτης, βιώνει τα αποτελέσματα της πανδημίας. [wikipedia gr](https://el.wikipedia.org/wiki/Πανδημία_COVID-19_στην_Ελλάδα )",
 
             
                       
